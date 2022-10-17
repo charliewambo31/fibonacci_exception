@@ -1,0 +1,25 @@
+def fibonacci(n):
+
+    if n<len(cache):
+        return cache[n]
+    else:
+        calcul=fibonacci(n-2)+fibonacci(n-1)
+        cache.append(calcul)
+        return calcul
+
+cache = [0, 1]
+condition=True
+while condition:
+    try:
+        n=int(input("Entrez un nombre entier:"))
+        # if n<0:raise()
+        print("\nle parametre choisi est:", n)
+        print(f"\tfibonacci de {n} est {fibonacci(n)}")
+        break
+    except ValueError:
+        print("I do not kow what to do")
+    except:
+        print("veuillez la bonne valeur")
+   
+
+

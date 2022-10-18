@@ -1,0 +1,30 @@
+# Exercice 1 Compteur pairs(revue des pairs):
+
+# Vous devez implémenter un menu utilisateur demandant à l'utilisateur d'entrer un nombre et retournant la somme de tous les chiffres pairs entre la valeur entrée et zéro(en récursion).
+
+# Vous devez vous assurez que la valeur entrée par l'utilisateur est un nombre (en utilisant un try except)
+
+def som_pairs(n):
+    somme=0
+    for num in range (0,n):
+        if num%2==0:
+            #print(f"les nombres pairs sont:{num}")
+            somme+=num
+            print(f"{num}")
+    return f"\tla somme des nombres pairs compris entre 0 et {x} est: {somme}"
+condition=True
+while condition:
+    try:
+        x = int(input("saisir une valeur : "))
+        if x<0:
+            raise ValueError
+        else:
+            print(f"{som_pairs(x)}") 
+        condition=False
+
+    except :
+        print("Oh dear, something went wrong...")
+
+  
+
+    

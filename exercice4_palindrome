@@ -1,0 +1,41 @@
+# Écrire un algorithme récursif prenant un string d'un utilisateur (s'assurer que c'est bel et bien un string) et vérifiant si le mot est un palindrôme 
+# (pouvant s'écrire dans les 2 directions ex: kayak).
+try:
+    value=input("entrez une chaine:")
+    if value.isalnum():
+        #print("true")
+        raise Exception("error")
+    #print("hu")
+    #elif value.isalpha():
+except SyntaxError:
+    print("another word")
+        
+except:
+
+    print("I do not kow what to do")
+    reverse_string=value[::-1]
+    if (value==reverse_string):
+        print("\tle mot choisi est un palindrome")
+    else :
+        print("\tle mot choisi n'est pas un palindrome")
+############################################################
+
+def test_palindrome(n):
+
+    reverse_string=value[::-1]
+    if (value==reverse_string):
+        return f"le mot choisi {value} est un palindrome\t"
+    else :
+        return f"le mot choisi {value} n est pas un palindrome\t"
+
+condition=True
+while condition:
+    try:
+        value=input("Entrez une chaine:")
+        print("\nle parametre choisi est:", value)
+        #print(f"\tOn dira que {test_palindrome(value)}")
+        #break
+        print(f"\tOn dira que {test_palindrome(value)}")
+        break
+    except:
+        print("error")

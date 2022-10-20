@@ -1,6 +1,7 @@
 # Exercice 1 Compteur pairs(revue des pairs):
 
-# Vous devez implémenter un menu utilisateur demandant à l'utilisateur d'entrer un nombre et retournant la somme de tous les chiffres pairs entre la valeur entrée et zéro(en récursion).
+# Vous devez implémenter un menu utilisateur demandant à l'utilisateur d'entrer un nombre et retournant 
+# la somme de tous les chiffres pairs entre la valeur entrée et zéro(en récursion).
 
 # Vous devez vous assurez que la valeur entrée par l'utilisateur est un nombre (en utilisant un try except)
 
@@ -11,6 +12,14 @@ def som_pairs(n):
             somme+=num
             print(f"{num}")
     return f"\tla somme des nombres pairs compris entre 0 et {x} est: {somme}"
+"""def fum():
+    s=0
+    n=int(input("faajaka:"))     #le test marche seulement pour les nombres pairs
+    for num in range(1,n*1//2+1):
+        s=s+num
+        print(2*s)
+
+fum()"""
 condition=True
 while condition:
     try:
